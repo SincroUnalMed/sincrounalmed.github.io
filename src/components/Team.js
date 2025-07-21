@@ -1,57 +1,27 @@
 import React from 'react';
 import { Mail, Linkedin, BookOpen, Award, Users } from 'lucide-react';
+import teamData from '../data/team.json';
 
 const Team = () => {
-      const teamMembers = [
-    {
-      name: "Dr. Carlos Rodriguez",
-      role: "Principal Engineer",
-      initials: "CR",
-      bio: "Leading expert in process control with 15+ years in industrial automation. Published 60+ peer-reviewed papers.",
-      email: "carlos.rodriguez@unal.edu.co",
-      linkedin: "#"
-    },
-    {
-      name: "Dr. Ana Martinez",
-      role: "Senior Control Engineer",
-      initials: "AM",
-      bio: "Specialist in AI-driven control systems and machine learning applications in industrial processes.",
-      email: "ana.martinez@unal.edu.co",
-      linkedin: "#"
-    },
-    {
-      name: "Dr. Luis Thompson",
-      role: "Automation Director",
-      initials: "LT",
-      bio: "Expert in industrial automation design and smart manufacturing, bridging theory with practical implementation.",
-      email: "luis.thompson@unal.edu.co",
-      linkedin: "#"
-    },
-    {
-      name: "Dr. Sofia Hassan",
-      role: "Data Analytics Lead",
-      initials: "SH",
-      bio: "Control engineer and data scientist specializing in large-scale industrial data analysis and predictive control.",
-      email: "sofia.hassan@unal.edu.co",
-      linkedin: "#"
-    },
-    {
-      name: "Dr. Diego Watson",
-      role: "Postdoctoral Engineer",
-      initials: "DW",
-      bio: "Control engineer focusing on robotic systems and advanced control algorithms for industrial applications.",
-      email: "diego.watson@unal.edu.co",
-      linkedin: "#"
-    },
-    {
-      name: "Dr. Maria Park",
-      role: "Research Engineer",
-      initials: "MP",
-      bio: "Control systems engineer working on IoT integration and smart manufacturing implementations.",
-      email: "maria.park@unal.edu.co",
-      linkedin: "#"
-    }
-  ];
+    // Generate initials from full name
+    const generateInitials = (fullName) => {
+        return fullName
+            .split(' ')
+            .filter(name => name.length > 0)
+            .map(name => name.charAt(0).toUpperCase())
+            .slice(0, 2) // Take first two initials
+            .join('');
+    };
+
+    // Transform JSON data to include initials
+    const teamMembers = teamData.map(member => ({
+        name: member.full_name,
+        role: member.profession,
+        initials: generateInitials(member.full_name),
+        bio: member.bio,
+        email: member.email,
+        linkedin: member.linkedin
+    }));
 
     const stats = [
         { icon: <Award size={24} />, label: "Awards Received", value: "12+" },
@@ -62,11 +32,11 @@ const Team = () => {
     return (
         <section id="team" className="section about-section">
             <div className="container">
-                        <h2 className="section-title">Meet Our Team</h2>
-        <p className="section-subtitle">
-          Our diverse, interdisciplinary team brings together expertise from control engineering, data science, 
-          automation, and industrial systems to drive innovative engineering solutions.
-        </p>
+                <h2 className="section-title">Meet Our Team</h2>
+                <p className="section-subtitle">
+                    Our diverse, interdisciplinary team brings together expertise from control engineering, data science,
+                    automation, and industrial systems to drive innovative engineering solutions.
+                </p>
 
                 {/* Team Stats */}
                 <div className="grid grid-3" style={{ marginBottom: '4rem' }}>
@@ -144,13 +114,13 @@ const Team = () => {
                     borderRadius: '12px',
                     boxShadow: '0 4px 6px rgba(255, 255, 255, 0.1)'
                 }}>
-                              <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#ffffff' }}>
-            Join Our Engineering Team
-          </h3>
-          <p style={{ color: '#cccccc', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-            We're always looking for talented engineers, students, and collaborators who share our passion 
-            for advancing control engineering. Explore opportunities to contribute to cutting-edge automation.
-          </p>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#ffffff' }}>
+                        Join Our Engineering Team
+                    </h3>
+                    <p style={{ color: '#cccccc', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
+                        We're always looking for talented engineers, students, and collaborators who share our passion
+                        for advancing control engineering. Explore opportunities to contribute to cutting-edge automation.
+                    </p>
                     <a href="#contact" className="btn btn-primary">
                         View Open Positions
                     </a>

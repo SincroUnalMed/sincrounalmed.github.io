@@ -40,7 +40,7 @@ const About = () => {
               Our Mission
             </h3>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#cccccc', marginBottom: '2rem' }}>
-              To conduct world-class control engineering research that translates into meaningful improvements 
+              To conduct world-class control engineering and electrical engineering research that translates into meaningful improvements 
               in industrial automation, process optimization, and smart systems. We strive to be 
               at the forefront of engineering innovation while maintaining the highest technical standards.
             </p>

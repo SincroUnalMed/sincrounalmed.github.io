@@ -6,13 +6,11 @@ const Hero = () => {
         <section className="hero-section" style={{ marginTop: '80px' }}>
             <div className="container">
                         <h1 className="hero-title">
-          Advancing Control Engineering<br />
-          for a Better Tomorrow
+            Control Engineering<br />
+            Electrical Engineering
         </h1>
         <p className="hero-subtitle">
-          SINCRO - Universidad Nacional de Colombia - Facultad de Minas is a leading engineering group 
-          dedicated to innovative control systems, automation technologies, and translating breakthrough 
-          findings into real-world industrial solutions.
+            SINCRO - Universidad Nacional de Colombia - Facultad de Minas Strengthen students' research, innovation, professional and knowledge transmission skills through the execution of formative research projects, courses, conferences and participation in events and competitions.
         </p>
 
                         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
