@@ -1,0 +1,23 @@
+[
+    {
+        "full_name": "Eliana Isabel Arango Zuluaga",
+        "email": "carlos.rodriguez@unal.edu.co",
+        "profession": "PhD. Electrical Engineering.",
+        "linkedin": "https://linkedin.com/in/--",
+        "bio": "Expert in the development of control systems for industrial processes."
+    },
+    {
+        "full_name": "Freddy Bolaños Martinez",
+        "email": "fbolanosm@unal.edu.co",
+        "profession": "PhD. Embedded Systems and Design Methodologies",
+        "linkedin": "https://www.linkedin.com/in/freddy-bolanos-martinez-20692442",
+        "bio": "Experienced Professor with a demonstrated history of working in the higher education industry. Skilled in Spanish, LaTeX, Matlab, Science, and Research."
+    },
+    {
+        "full_name": "Alejandro D.J. Gómez Flórez",
+        "email": "ajgomezf@unal.edu.co",
+        "profession": "Control Engineer",
+        "linkedin": "https://linkedin.com/in/aldajo92",
+        "bio": "Contributor to the Sincro project, with a focus on control engineering, mathematics, computer vision, robotics and embedded systems."
+    }
+]
