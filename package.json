@@ -5,8 +5,6 @@
       "homepage": "https://sincrounalmed.github.io",
       "private": true,
       "dependencies": {
-            "@tsparticles/react": "^3.0.0",
-            "@tsparticles/slim": "^3.8.1",
             "lucide-react": "^0.263.1",
             "react": "^18.2.0",
             "react-dom": "^18.2.0",

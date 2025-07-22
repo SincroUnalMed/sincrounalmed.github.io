@@ -4,10 +4,10 @@
 
 /* Additional component-specific styles */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 120px 0;
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 120px 0;
 }
 
 .hero-title {
@@ -27,7 +27,7 @@
 }
 
 .about-section {
-  background: #111111;
+    background: #111111;
 }
 
 .stats-grid {
@@ -38,11 +38,11 @@
 }
 
 .stat-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: #1a1a1a;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 .stat-number {
@@ -59,9 +59,9 @@
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .project-card p {
@@ -105,10 +105,10 @@
 }
 
 .member-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
 }
 
 .member-role {
@@ -124,14 +124,14 @@
 }
 
 .contact-section {
-  background: #111111;
+    background: #111111;
 }
 
 .contact-info {
-  background: #1a1a1a;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 .footer-section {
